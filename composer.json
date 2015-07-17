@@ -1,0 +1,17 @@
+{
+    "name": "friendsofvictoire/cookielaw-widget",
+    "type": "symfony-bundle",
+    "description": "Victoire CookieLaw widget",
+    "keywords": ["victoire", "CookieLaw", "widget"],
+    "homepage": "http://victoire.io",
+    "license": "MIT",
+    "require": {
+        "php"                      : ">=5.3.3",
+        "symfony/framework-bundle" : "~2.3",
+        "victoire/victoire"        : "dev-master"    },
+    "autoload": {
+        "psr-0": { "Victoire\\Widget\\CookieLawBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Victoire/Widget/CookieLawBundle"
+}

@@ -1,0 +1,11 @@
+victoire_core:
+    widgets:
+        CookieLaw:
+            class: "Victoire\\Widget\\CookieLawBundle\\Entity\\WidgetCookieLaw"
+            name: CookieLaw
+            
+jms_translation:
+    configs:
+        victoire_cookielaw_bundle:
+            dirs: ["@VictoireCookieLawBundle"]
+            output_dir: "@VictoireCookieLawBundle/Resources/translations"

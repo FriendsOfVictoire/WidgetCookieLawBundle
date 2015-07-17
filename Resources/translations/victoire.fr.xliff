@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2013-11-27T18:15:06Z" source-language="en" target-language="fr" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="1" resname="widget.cookielaw.new.action.label">
+        <source>widget.cookielaw.new.action.label</source>
+        <target>CookieLaw</target>
+      </trans-unit>
+      <trans-unit id="2" resname="modal.form.widget.type.cookielaw.label">
+        <source>modal.form.widget.type.cookielaw.label</source>
+        <target>CookieLaw</target>
+      </trans-unit>
+      <trans-unit id="3" resname="widget_cookielaw.form.message.label">
+        <source>widget_cookielaw.form.message.label</source>
+        <target>Message</target>
+      </trans-unit>
+      <trans-unit id="4" resname="widget_cookielaw.form.dismiss.label">
+        <source>widget_cookielaw.form.dismiss.label</source>
+        <target>Bouton OK</target>
+      </trans-unit>
+      <trans-unit id="5" resname="widget_cookielaw.form.learnMore.label">
+        <source>widget_cookielaw.form.learnMore.label</source>
+        <target>En savoir plus</target>
+      </trans-unit>
+      <trans-unit id="6" resname="widget_cookielaw.form.link.label">
+        <source>widget_cookielaw.form.link.label</source>
+        <target>Lien en savoir plus</target>
+      </trans-unit>
+      <trans-unit id="7" resname="widget_cookielaw.form.theme.label">
+        <source>widget_cookielaw.form.theme.label</source>
+        <target>Thème</target>
+      </trans-unit>
+      <trans-unit id="8" resname="widget_cookielaw.form.theme.choice.dark_top.label">
+        <source>widget_cookielaw.form.theme.choice.dark_top.label</source>
+        <target>Sombre haut</target>
+      </trans-unit>
+      <trans-unit id="9" resname="widget_cookielaw.form.theme.choice.dark_floating.label">
+        <source>widget_cookielaw.form.theme.choice.dark_floating.label</source>
+        <target>Sombre flottant</target>
+      </trans-unit>
+      <trans-unit id="10" resname="widget_cookielaw.form.theme.choice.dark_bottom.label">
+        <source>widget_cookielaw.form.theme.choice.dark_bottom.label</source>
+        <target>Sombre bas</target>
+      </trans-unit>
+      <trans-unit id="11" resname="widget_cookielaw.form.theme.choice.light_top.label">
+        <source>widget_cookielaw.form.theme.choice.light_top.label</source>
+        <target>Clair haut</target>
+      </trans-unit>
+      <trans-unit id="12" resname="widget_cookielaw.form.theme.choice.light_floating.label">
+        <source>widget_cookielaw.form.theme.choice.light_floating.label</source>
+        <target>Clair flottant</target>
+      </trans-unit>
+      <trans-unit id="13" resname="widget_cookielaw.form.theme.choice.light_bottom.label">
+        <source>widget_cookielaw.form.theme.choice.light_bottom.label</source>
+        <target>Clair bas</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

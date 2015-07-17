@@ -1,0 +1,15 @@
+services:
+    victoire_core.widget_cookielaw_content_resolver:
+        parent: victoire_widget.base_widget_content_resolver
+        tags:
+            - { name: victoire_widget.widget_content_resolver, alias: CookieLaw }
+
+    #alias to the entity
+    victoire.widget.cookielaw:
+        class: Victoire\Widget\CookieLawBundle\Entity\WidgetCookieLaw
+
+    #alias to the form
+    victoire.widget.form.cookielaw:
+        class: Victoire\Widget\CookieLawBundle\Form\WidgetCookieLawType
+        tags:
+            - { name: form.type , alias: victoire_widget_form_cookielaw }
