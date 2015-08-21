@@ -3,6 +3,7 @@
 {% block content %}
 
     <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    {% if app.environment == 'prod' %}
     <script type="text/javascript">
         window.cookieconsent_options = {
             "message":"{{ message }}",
@@ -13,4 +14,6 @@
     </script>
 
     <script type="text/javascript" src="//s3.amazonaws.com/cc.silktide.com/cookieconsent.latest.min.js"></script>
+    {% endif %}
 {% endblock content %}
+a
