@@ -1,18 +1,18 @@
 <?php
+
 namespace Victoire\Widget\CookieLawBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Victoire\Bundle\WidgetBundle\Entity\Widget;
 
 /**
- * WidgetCookieLaw
+ * WidgetCookieLaw.
  *
  * @ORM\Table("vic_widget_cookielaw")
  * @ORM\Entity
  */
 class WidgetCookieLaw extends Widget
 {
-
     /**
      * @var text
      *
@@ -48,22 +48,20 @@ class WidgetCookieLaw extends Widget
      */
     protected $cookieTheme;
 
-
     /**
      * To String function
      * Used in render choices type (Especially in VictoireWidgetRenderBundle)
-     * //TODO Check the generated value and make it more consistent
+     * //TODO Check the generated value and make it more consistent.
      *
-     * @return String
+     * @return string
      */
     public function __toString()
     {
         return 'CookieLaw #'.$this->id;
     }
 
-
     /**
-     * Set message
+     * Set message.
      *
      * @param string $message
      */
@@ -75,7 +73,7 @@ class WidgetCookieLaw extends Widget
     }
 
     /**
-     * Get message
+     * Get message.
      *
      * @return string
      */
@@ -85,7 +83,7 @@ class WidgetCookieLaw extends Widget
     }
 
     /**
-     * Set dismiss
+     * Set dismiss.
      *
      * @param string $dismiss
      */
@@ -97,7 +95,7 @@ class WidgetCookieLaw extends Widget
     }
 
     /**
-     * Get dismiss
+     * Get dismiss.
      *
      * @return string
      */
@@ -123,7 +121,7 @@ class WidgetCookieLaw extends Widget
     }
 
     /**
-     * Set link
+     * Set link.
      *
      * @param string $link
      */
@@ -135,7 +133,7 @@ class WidgetCookieLaw extends Widget
     }
 
     /**
-     * Get link
+     * Get link.
      *
      * @return string
      */
@@ -159,5 +157,4 @@ class WidgetCookieLaw extends Widget
     {
         $this->cookieTheme = $cookieTheme;
     }
-
 }

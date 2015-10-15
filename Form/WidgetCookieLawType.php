@@ -6,65 +6,65 @@ use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
 
-
 /**
- * WidgetCookieLaw form type
+ * WidgetCookieLaw form type.
  */
 class WidgetCookieLawType extends WidgetType
 {
     /**
-     * define form fields
+     * define form fields.
+     *
      * @param FormBuilderInterface $builder
+     *
      * @param array $options
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('message', null, array(
-                    'label' => 'widget_cookielaw.form.message.label'
-            ))
-            ->add('dismiss', null, array(
+            ->add('message', null, [
+                    'label' => 'widget_cookielaw.form.message.label',
+            ])
+            ->add('dismiss', null, [
                     'label' => 'widget_cookielaw.form.dismiss.label',
-            ))
-            ->add('learnMore', null, array(
+            ])
+            ->add('learnMore', null, [
                     'label' => 'widget_cookielaw.form.learnMore.label',
-            ))
-            ->add('link', null, array(
+            ])
+            ->add('link', null, [
                     'label' => 'widget_cookielaw.form.link.label',
-            ))
-            ->add('cookieTheme', 'choice', array(
-                    'label' => 'widget_cookielaw.form.theme.label',
+            ])
+            ->add('cookieTheme', 'choice', [
+                    'label'   => 'widget_cookielaw.form.theme.label',
                     'choices' => [
-                        'dark-top' => "widget_cookielaw.form.theme.choice.dark_top.label",
-                        'dark-floating' => "widget_cookielaw.form.theme.choice.dark_floating.label",
-                        'dark-bottom' => "widget_cookielaw.form.theme.choice.dark_bottom.label",
-                        'light-top' => "widget_cookielaw.form.theme.choice.light_top.label",
-                        'light-floating' => "widget_cookielaw.form.theme.choice.light_floating.label",
-                        'light-bottom' => "widget_cookielaw.form.theme.choice.light_bottom.label",
-                    ]
-            ));
+                        'dark-top'       => 'widget_cookielaw.form.theme.choice.dark_top.label',
+                        'dark-floating'  => 'widget_cookielaw.form.theme.choice.dark_floating.label',
+                        'dark-bottom'    => 'widget_cookielaw.form.theme.choice.dark_bottom.label',
+                        'light-top'      => 'widget_cookielaw.form.theme.choice.light_top.label',
+                        'light-floating' => 'widget_cookielaw.form.theme.choice.light_floating.label',
+                        'light-bottom'   => 'widget_cookielaw.form.theme.choice.light_bottom.label',
+                    ],
+            ]);
         parent::buildForm($builder, $options);
-
     }
 
-
     /**
-     * bind form to WidgetCookieLaw entity
+     * bind form to WidgetCookieLaw entity.
+     *
      * @param OptionsResolverInterface $resolver
      */
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         parent::setDefaultOptions($resolver);
 
-        $resolver->setDefaults(array(
+        $resolver->setDefaults([
             'data_class'         => 'Victoire\Widget\CookieLawBundle\Entity\WidgetCookieLaw',
             'widget'             => 'CookieLaw',
-            'translation_domain' => 'victoire'
-        ));
+            'translation_domain' => 'victoire',
+        ]);
     }
 
     /**
-     * get form name
+     * get form name.
      *
      * @return string The form name
      */
