@@ -1,16 +1,25 @@
-Victoire CMS CookieLaw Bundle
+Victoire DCMS CookieLaw Bundle
 ============
 
-Need to add a cookielaw in a victoire cms website ?
+##What is the purpose of this bundle
 
-First you need to have a valid Symfony2 Victoire edition.
-Then you just have to run the following composer command :
+This bundle gives you access to the *Cookie Law Widget*.
+With this widget, an alert pops to inform the user that cookies are used on this website.
 
-    php composer.phar require victoire/cookielaw-widget
+##Set Up Victoire
+
+If you haven't already, you can follow the steps to set up Victoire *[here](https://github.com/Victoire/victoire/blob/master/setup.md)*
+
+##Install the Bundle
+
+Run the following composer command :
+
+    php composer.phar require friendsofvictoire/cookielaw-widget
+
+###Reminder
 
 Do not forget to add the bundle in your AppKernel !
 
-```php
     class AppKernel extends Kernel
     {
         public function registerBundles()
@@ -23,4 +32,3 @@ Do not forget to add the bundle in your AppKernel !
             return $bundles;
         }
     }
-```
