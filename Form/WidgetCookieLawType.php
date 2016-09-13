@@ -21,27 +21,28 @@ class WidgetCookieLawType extends WidgetType
     {
         $builder
             ->add('message', null, [
-                    'label' => 'widget_cookielaw.form.message.label',
+                'label' => 'widget_cookielaw.form.message.label',
             ])
             ->add('dismiss', null, [
-                    'label' => 'widget_cookielaw.form.dismiss.label',
+                'label' => 'widget_cookielaw.form.dismiss.label',
             ])
             ->add('learnMore', null, [
-                    'label' => 'widget_cookielaw.form.learnMore.label',
+                'label' => 'widget_cookielaw.form.learnMore.label',
             ])
             ->add('link', LinkType::class, [
-                    'label' => 'widget_cookielaw.form.link.label',
+                'label' => 'widget_cookielaw.form.link.label',
             ])
             ->add('cookieTheme', ChoiceType::class, [
-                    'label'   => 'widget_cookielaw.form.theme.label',
-                    'choices' => [
-                        'widget_cookielaw.form.theme.choice.dark_top.label'       => 'dark-top',
-                        'widget_cookielaw.form.theme.choice.dark_floating.label'  => 'dark-floating',
-                        'widget_cookielaw.form.theme.choice.dark_bottom.label'    => 'dark-bottom',
-                        'widget_cookielaw.form.theme.choice.light_top.label'      => 'light-top',
-                        'widget_cookielaw.form.theme.choice.light_floating.label' => 'light-floating',
-                        'widget_cookielaw.form.theme.choice.light_bottom.label'   => 'light-bottom',
-                    ],
+                'label'   => 'widget_cookielaw.form.theme.label',
+                'choices' => [
+                    'widget_cookielaw.form.theme.choice.dark_top.label'       => 'dark-top',
+                    'widget_cookielaw.form.theme.choice.dark_floating.label'  => 'dark-floating',
+                    'widget_cookielaw.form.theme.choice.dark_bottom.label'    => 'dark-bottom',
+                    'widget_cookielaw.form.theme.choice.light_top.label'      => 'light-top',
+                    'widget_cookielaw.form.theme.choice.light_floating.label' => 'light-floating',
+                    'widget_cookielaw.form.theme.choice.light_bottom.label'   => 'light-bottom',
+                ],
+                'choices_as_values' => true
             ]);
         parent::buildForm($builder, $options);
     }
