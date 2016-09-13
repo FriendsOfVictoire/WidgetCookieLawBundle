@@ -6,6 +6,7 @@ use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Victoire\Bundle\CoreBundle\Form\WidgetType;
+use Victoire\Bundle\FormBundle\Form\Type\LinkType;
 
 class WidgetCookieLawType extends WidgetType
 {
@@ -28,7 +29,7 @@ class WidgetCookieLawType extends WidgetType
             ->add('learnMore', null, [
                     'label' => 'widget_cookielaw.form.learnMore.label',
             ])
-            ->add('link', null, [
+            ->add('link', LinkType::class, [
                     'label' => 'widget_cookielaw.form.link.label',
             ])
             ->add('cookieTheme', ChoiceType::class, [

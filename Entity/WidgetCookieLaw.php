@@ -13,8 +13,10 @@ use Victoire\Bundle\WidgetBundle\Entity\Widget;
  */
 class WidgetCookieLaw extends Widget
 {
+    use \Victoire\Bundle\WidgetBundle\Entity\Traits\LinkTrait;
+
     /**
-     * @var text
+     * @var string
      *
      * @ORM\Column(name="message", type="text")
      */
@@ -33,13 +35,6 @@ class WidgetCookieLaw extends Widget
      * @ORM\Column(name="learnMore", type="string", length=255, nullable=true)
      */
     protected $learnMore;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="link", type="string", length=255, nullable=true)
-     */
-    protected $link;
 
     /**
      * @var string
